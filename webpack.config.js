@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'nav-cart-counter.bundle.js'
+    filename: 'nav-cart-counter.min.js'
   },
   module: {
     rules: [

@@ -4,14 +4,14 @@ This module displays the number of items in a users cart and displays a notifica
 
 ## Usage
 
-1. add `nav-cart-counter.bundle.js` and `nav-cart-counter.css` in your airship project:
+1. add `nav-cart-counter.min.js` and `nav-cart-counter.css` in your airship project:
 
 ```
 <head>
 	<link rel="stylesheet" type="text/css" href="/assets/styles/nav-cart-counter.css">
 </head>
 <body>
-	<script src="/assets/scripts/nav-cart-counter.bundle.js"></script>
+	<script src="/assets/scripts/nav-cart-counter.min.js"></script>
 </body>
 ```
 
@@ -42,4 +42,4 @@ this serves `src/` on `localhost:9000`
 yarn build
 ```
 
-this will build/minify the `src/app.js` to `dist/nav-cart-counter.bundle.js`
+this will build/minify the `src/app.js` to `dist/nav-cart-counter.min.js`
