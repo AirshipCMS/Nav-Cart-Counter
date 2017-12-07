@@ -32,7 +32,7 @@ function notify(dataset) {
   }, 3000);
 }
 
-function updateCartCount(dataset) {
+window.updateCartCount = function updateCartCount(dataset) {
   cartCount++;
   cartLink.innerHTML = `Cart ${cartCount}`;
   notify(dataset);
