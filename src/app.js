@@ -39,5 +39,7 @@ function updateCartCount(e) {
 }
 
 function getCartCount() {
-  return JSON.parse(localStorage.getItem("cart")).items.length || 0;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  let count = cart ? cart.items.length : 0;
+  return count;
 }
