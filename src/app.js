@@ -24,7 +24,11 @@ if (cartCounter) {
 }
 
 function notify(dataset) {
-  cartNotificationText.innerHTML = `${dataset.productTitle} - ${dataset.productVariationTitle} added to cart.`;
+  let variationTitle = dataset.productVariationTitle;
+  if(dataset.type === 'plan') {
+    variationTitle = dataset.name;
+  }
+  cartNotificationText.innerHTML = `${dataset.productTitle} - ${variationTitle} added to cart.`;
   cartNotification.classList.toggle(hiddenClass);
   setTimeout(() => {
     cartNotification.classList.toggle(hiddenClass);
