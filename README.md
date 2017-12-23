@@ -31,7 +31,7 @@ yarn install
 
 ### How to Run
 ```
-yarn run dev
+yarn start
 ```
 
 this serves `src/` on `localhost:9000`

@@ -1,9 +1,11 @@
 const cartCounter = document.getElementById("nav-cart-counter"),
   hiddenClass = "nav-cart-counter-hidden";
-let cartCount = getCartCount();
-let cartLink = document.createElement("a");
-let cartNotification = document.createElement("span");
-let cartNotificationText = document.createElement("span");
+let cartCount = getCartCount(),
+    cartLink = document.createElement("a"),
+    cartNotification = document.createElement("div"),
+    cartNotificationText = document.createElement("span"),
+    cartLinkText = document.createElement("span"),
+    cartLinkCount = document.createElement("span");
 if (cartCounter) {
   let addToCartButton = document.querySelectorAll("button[data-aerostat-id]");
 
@@ -14,7 +16,12 @@ if (cartCounter) {
   cartLink.className = "nav-cart-counter-count";
   cartLink.href = "/cart";
   cartCounter.appendChild(cartLink);
-  cartLink.innerHTML = `Cart ${cartCount}`;
+  cartLinkText.className = "nav-cart-text";
+  cartLinkText.innerHTML = "Cart";
+  cartLinkCount.className = "nav-cart-count";
+  cartLinkCount.innerHTML = cartCount;
+  cartLink.appendChild(cartLinkText);
+  cartLink.appendChild(cartLinkCount);
 
   cartNotification.className = `nav-cart-counter-notification ${hiddenClass}`;
   cartCounter.appendChild(cartNotification);
@@ -38,7 +45,7 @@ function notify(dataset) {
 
 window.updateCartCount = function updateCartCount(dataset) {
   cartCount++;
-  cartLink.innerHTML = `Cart ${cartCount}`;
+  cartLinkCount.innerHTML = cartCount;
   notify(dataset);
 }
 
