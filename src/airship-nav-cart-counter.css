@@ -1,16 +1,16 @@
 /* NAV CART COUNTER & NOTIFICATION */
 @media only screen and (min-width: 1024px){
-  #nav-cart-counter{
+  .airship-nav-cart-counter{
     position: relative;
   }
 }
 
-.nav-cart-counter-notification{
+.airship-nav-cart-counter-notification{
   display: none;
 }
 
 @media only screen and (min-width: 1024px){
-  .nav-cart-counter-notification{
+  .airship-nav-cart-counter-notification{
     position: absolute;
     display: block;
     opacity: 1;
@@ -21,13 +21,13 @@
   }
 }
 
-.nav-cart-counter-notification.nav-cart-counter-hidden{
+.airship-nav-cart-counter-notification.airship-nav-cart-counter-hidden{
   opacity: 0;
   height: 0;
   display: none;
 }
 
-.nav-cart-counter-notification-text{
+.airship-nav-cart-counter-notification-text{
   display: block;
   min-width: 175px;
   max-width: 225px;
