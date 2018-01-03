@@ -4,7 +4,7 @@ This module displays the number of items in a users cart and displays a notifica
 
 ## Usage
 
-1. add `nav-cart-counter.min.js` and `nav-cart-counter.css` in your airship project:
+1. In your airship project, add `airship-nav-cart-counter.min.js` to `compartments/assets/scripts/`. Add `airship-nav-cart-counter.min.css` to `compartments/assets/styles/`
 
 ```
 <head>
@@ -15,10 +15,10 @@ This module displays the number of items in a users cart and displays a notifica
 </body>
 ```
 
-2. add the element container. This is done by adding the `id` `nav-cart-counter` to the desired element.
+2. add the element container. This is done by adding the `class` `airship-nav-cart-counter` to the desired element.
 
 ```
-<div id="nav-cart-counter"></div>
+<div class="airship-nav-cart-counter"></div>
 ```
 
 ## Development
@@ -42,4 +42,4 @@ this serves `src/` on `localhost:9000`
 yarn build
 ```
 
-this will build/minify the `src/app.js` to `dist/nav-cart-counter.min.js`
+this will build/minify all files in `src/` to `dist/`
