@@ -5,6 +5,10 @@
   }
 }
 
+.airship-nav-cart-count{
+  margin-left: 7px;
+}
+
 .airship-nav-cart-counter-notification{
   display: none;
 }
